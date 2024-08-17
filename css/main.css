@@ -1,4 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 Body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+section {
+  position: relative;
+  background-image: url(../images/bg-intro-mobile.png);
+  width: 100%;
+}
+section .bg-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 100%, 74%);
+  opacity: 1;
+  z-index: -1;
+}
+section .content-box {
+  padding: 0em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+section .content-box .section-heading {
+  margin-top: 3em;
+  text-align: center;
+}
+section .content-box .section-heading .section-title, section .content-box .section-heading .section-text {
+  color: whitesmoke;
+}
+section .content-box .section-heading .section-text {
+  margin-top: 1em;
+  font-size: 0.85rem;
+}
+section .content-box .form-box {
+  margin-top: 4em;
+}
+section .content-box .form-box .try-btn {
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 rgba(83, 83, 83, 0.4);
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 2em;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+section .content-box .form-box .try-btn .try-bold {
+  font-weight: 800;
+}
+section .content-box .form-box .signup-form {
+  padding: 1em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 rgba(83, 83, 83, 0.4);
+  margin-bottom: 2em;
+}
+section .content-box .form-box .signup-form .input-box {
+  position: relative;
+}
+section .content-box .form-box .signup-form .input-box .user-input {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid rgba(83, 83, 83, 0.4);
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+section .content-box .form-box .signup-form .input-box .icon-error {
+  position: absolute;
+  display: none;
+  top: 15%;
+  right: 10%;
+}
+section .content-box .form-box .signup-form .input-box .user-input::-moz-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: bold;
+}
+section .content-box .form-box .signup-form .input-box .user-input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: bold;
+}
+section .content-box .form-box .signup-form .input-box .text-error {
+  display: none;
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 74%);
+  margin-top: -1em;
+  margin-bottom: 1em;
+  text-align: right;
+  font-style: italic;
+}
+section .content-box .form-box .signup-form .input-box .active {
+  display: block;
+}
+section .content-box .form-box .signup-form .claim-btn {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 1em;
+}
+section .content-box .form-box .signup-form .form-desc {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1em;
+  color: hsl(246, 25%, 77%);
+}
+section .content-box .form-box .signup-form .form-desc .decorated-desc {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

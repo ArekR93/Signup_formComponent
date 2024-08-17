@@ -9,10 +9,134 @@ $blue: hsl(248, 32%, 49%);
 
 //NeutralColors
 
-$darkBlue: hsl(249, 10%, 26%) ;
+$darkBlue: hsl(249, 10%, 26%);
 $grayishBlue: hsl(246, 25%, 77%);
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 Body {
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+section{
+    position: relative;
+    background-image: url(../images/bg-intro-mobile.png);
+    width: 100%;
+    .bg-shadow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $red;
+        opacity: 1;
+        z-index: -1;
+    }
+    .content-box{
+        padding: 0em 1.5em;
+        display: flex;
+        flex-direction: column;
+        .section-heading{
+            margin-top: 3em;
+            text-align: center;
+            .section-title, .section-text{
+                color: whitesmoke;
+            }
+            .section-text{
+            margin-top: 1em;
+                font-size: .85rem;
+            }
+        }
+        .form-box{
+            margin-top: 4em;
+            .try-btn{
+                width: 100%;
+                padding: 1em 2em;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0 5px 0 rgb(83, 83, 83, 0.4);
+                background-color: $blue;
+                margin-bottom: 2em;
+                color: whitesmoke;
+                font-size: .9rem;
+                line-height: 25px;
+                .try-bold{
+                    font-weight: 800;
+                }
+            }
+            .signup-form{
+                padding: 1em;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 5px 0 rgb(83, 83, 83, 0.4);
+                margin-bottom: 2em;
+                .input-box{
+                    position: relative;
+                    .user-input{
+                        width: 100%;
+                        padding: 1em;
+                        border: 1px solid rgb(83, 83, 83, 0.4);
+                        margin-bottom: 1em;
+                        border-radius: 5px;
+                    }
+                    .icon-error{
+                        position: absolute;
+                        display: none;
+                        top: 15%;
+                        right: 10%;
+                    }
+                    .user-input::placeholder{
+                        color: $darkBlue;
+                        font-weight: bold;
+                    }
+                    .text-error{
+                        display: none;
+                        font-size: .6rem;
+                        color: $red;
+                        margin-top: -1em;
+                        margin-bottom: 1em;
+                        text-align: right;
+                        font-style: italic;
+                    }
+                    .active{
+                        display: block;
+                    }
+                }
+
+                .claim-btn{
+                    width: 100%;
+                    padding: 1em;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $green;
+                    text-transform: uppercase;
+                    color:whitesmoke;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    margin-top: 1em;
+                }
+                .form-desc{
+                    font-size: .7rem;
+                    text-align: center;
+                    margin-top: 1em;
+                    color: $grayishBlue;
+                    .decorated-desc{
+                        color: $red;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
