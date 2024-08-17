@@ -140,3 +140,26 @@ section{
         }
     }
 }
+
+@media(min-width:410px){
+    section{
+        height: 100vh;
+    }
+}
+
+@media(min-width:1200px){
+    section{
+        .content-box{
+            height: 100vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .section-heading{
+                width: 40%;
+            }
+            .form-box{
+                width: 40%;
+            }
+        }
+    }
+}

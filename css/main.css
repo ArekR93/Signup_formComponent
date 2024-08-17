@@ -130,4 +130,24 @@ section .content-box .form-box .signup-form .form-desc {
 section .content-box .form-box .signup-form .form-desc .decorated-desc {
   color: hsl(0, 100%, 74%);
   font-weight: bold;
+}
+
+@media (min-width: 410px) {
+  section {
+    height: 100vh;
+  }
+}
+@media (min-width: 1200px) {
+  section .content-box {
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  section .content-box .section-heading {
+    width: 40%;
+  }
+  section .content-box .form-box {
+    width: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */
